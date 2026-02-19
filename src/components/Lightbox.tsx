@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useRef } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface LightboxProps {
@@ -9,7 +9,11 @@ interface LightboxProps {
   onNext?: () => void;
 }
 
+const SWIPE_THRESHOLD = 50; // мінімальна відстань свайпу в px
+
 const Lightbox = ({ src, alt, onClose, onPrev, onNext }: LightboxProps) => {
+  const touchStartX = useRef<number | null>(null);
+
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -17,6 +21,25 @@ const Lightbox = ({ src, alt, onClose, onPrev, onNext }: LightboxProps) => {
       if (e.key === "ArrowRight" && onNext) onNext();
     },
     [onClose, onPrev, onNext]
+  );
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback(
+    (e: React.TouchEvent) => {
+      if (touchStartX.current === null) return;
+      const diff = touchStartX.current - e.changedTouches[0].clientX;
+
+      if (Math.abs(diff) >= SWIPE_THRESHOLD) {
+        if (diff > 0 && onNext) onNext(); // свайп ліворуч → наступне
+        if (diff < 0 && onPrev) onPrev(); // свайп праворуч → попереднє
+      }
+
+      touchStartX.current = null;
+    },
+    [onPrev, onNext]
   );
 
   useEffect(() => {
@@ -32,6 +55,8 @@ const Lightbox = ({ src, alt, onClose, onPrev, onNext }: LightboxProps) => {
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center bg-foreground/95 backdrop-blur-sm"
       onClick={onClose}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <button
         onClick={onClose}
