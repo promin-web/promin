@@ -1,4 +1,13 @@
-import whiteBg1 from "@/assets/creative-4.jpg";
+import whiteBg1 from "@/assets/portfolio/whitebg-1.webp";
+import whiteBg2 from "@/assets/portfolio/whitebg-2.webp";
+import whiteBg3 from "@/assets/portfolio/whitebg-3.webp";
+import whiteBg4 from "@/assets/portfolio/whitebg-4.webp";
+import whiteBg5 from "@/assets/portfolio/whitebg-5.webp";
+import whiteBg6 from "@/assets/portfolio/whitebg-6.webp";
+import whiteBg7 from "@/assets/portfolio/whitebg-7.webp";
+import whiteBg8 from "@/assets/portfolio/whitebg-8.webp";
+import whiteBg9 from "@/assets/portfolio/whitebg-9.webp";
+import whiteBg10 from "@/assets/portfolio/whitebg-10.webp";
 import lifestyle1 from "@/assets/portfolio/lifestyle-1.jpg";
 import lifestyle2 from "@/assets/portfolio/lifestyle-2.jpg";
 import lifestyle3 from "@/assets/portfolio/lifestyle-3.jpg";
@@ -28,7 +37,16 @@ export const categories: { key: Category; label: string }[] = [
 ];
 
 export const portfolioItems: PortfolioItem[] = [
-  { id: 1, src: whiteBg1, alt: "Зйомка на білому фоні", category: "ecommerce", aspect: "portrait" },
+  { id: 1, src: whiteBg1, alt: "Білий фон — Nutriplus Spirulina (фронт)", category: "ecommerce", aspect: "portrait" },
+  { id: 13, src: whiteBg2, alt: "Білий фон — Nutriplus Spirulina (бік)", category: "ecommerce", aspect: "portrait" },
+  { id: 14, src: whiteBg3, alt: "Білий фон — Nutriplus Spirulina (ракурс)", category: "ecommerce", aspect: "portrait" },
+  { id: 15, src: whiteBg4, alt: "Білий фон — Farmasi Lip Balm (фронт)", category: "ecommerce", aspect: "portrait" },
+  { id: 16, src: whiteBg5, alt: "Білий фон — Farmasi Lip Balm (бік)", category: "ecommerce", aspect: "portrait" },
+  { id: 17, src: whiteBg6, alt: "Білий фон — Farmasi Lip Balm (ракурс)", category: "ecommerce", aspect: "portrait" },
+  { id: 18, src: whiteBg7, alt: "Білий фон — Farmasi BB Cream (фронт)", category: "ecommerce", aspect: "portrait" },
+  { id: 19, src: whiteBg8, alt: "Білий фон — Farmasi BB Cream (бік)", category: "ecommerce", aspect: "portrait" },
+  { id: 20, src: whiteBg9, alt: "Білий фон — Farmasi Body Lotion", category: "ecommerce", aspect: "portrait" },
+  { id: 21, src: whiteBg10, alt: "Білий фон — Farm Cider", category: "ecommerce", aspect: "portrait" },
   { id: 2, src: lifestyle1, alt: "Lifestyle — кава", category: "lifestyle", aspect: "portrait" },
   { id: 3, src: creative1, alt: "Рекламна зйомка — годинник", category: "creative", aspect: "portrait" },
   { id: 4, src: detail2, alt: "Macro — ювелірка", category: "detail", aspect: "landscape" },
