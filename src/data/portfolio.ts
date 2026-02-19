@@ -1,6 +1,4 @@
-import ecom1 from "@/assets/portfolio/ecom-1.jpg";
-import ecom2 from "@/assets/portfolio/ecom-2.jpg";
-import ecom3 from "@/assets/portfolio/ecom-3.jpg";
+import whiteBg1 from "@/assets/creative-4.jpg";
 import lifestyle1 from "@/assets/portfolio/lifestyle-1.jpg";
 import lifestyle2 from "@/assets/portfolio/lifestyle-2.jpg";
 import lifestyle3 from "@/assets/portfolio/lifestyle-3.jpg";
@@ -23,22 +21,20 @@ export interface PortfolioItem {
 
 export const categories: { key: Category; label: string }[] = [
   { key: "all", label: "Усі" },
-  { key: "ecommerce", label: "E-commerce" },
+  { key: "ecommerce", label: "Білий фон" },
   { key: "lifestyle", label: "Lifestyle" },
   { key: "creative", label: "Креативна" },
   { key: "detail", label: "Detail & Macro" },
 ];
 
 export const portfolioItems: PortfolioItem[] = [
-  { id: 1, src: ecom1, alt: "Каталожна зйомка — кераміка", category: "ecommerce", aspect: "portrait" },
+  { id: 1, src: whiteBg1, alt: "Зйомка на білому фоні", category: "ecommerce", aspect: "portrait" },
   { id: 2, src: lifestyle1, alt: "Lifestyle — кава", category: "lifestyle", aspect: "portrait" },
   { id: 3, src: creative1, alt: "Рекламна зйомка — годинник", category: "creative", aspect: "portrait" },
   { id: 4, src: detail2, alt: "Macro — ювелірка", category: "detail", aspect: "landscape" },
-  { id: 5, src: ecom2, alt: "Каталожна зйомка — парфуми", category: "ecommerce", aspect: "portrait" },
   { id: 6, src: lifestyle2, alt: "Lifestyle — косметика", category: "lifestyle", aspect: "landscape" },
   { id: 7, src: creative2, alt: "Рекламна зйомка — косметика", category: "creative", aspect: "landscape" },
   { id: 8, src: detail1, alt: "Macro — шкіра", category: "detail", aspect: "portrait" },
-  { id: 9, src: ecom3, alt: "Каталожна зйомка — аксесуари", category: "ecommerce", aspect: "landscape" },
   { id: 10, src: lifestyle3, alt: "Lifestyle — їжа", category: "lifestyle", aspect: "portrait" },
   { id: 11, src: creative3, alt: "Рекламна зйомка — електроніка", category: "creative", aspect: "portrait" },
   { id: 12, src: detail3, alt: "Macro — тканина", category: "detail", aspect: "landscape" },
