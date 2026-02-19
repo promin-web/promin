@@ -8,9 +8,16 @@ import whiteBg7 from "@/assets/portfolio/whitebg-7.webp";
 import whiteBg8 from "@/assets/portfolio/whitebg-8.webp";
 import whiteBg9 from "@/assets/portfolio/whitebg-9.webp";
 import whiteBg10 from "@/assets/portfolio/whitebg-10.webp";
-import lifestyle1 from "@/assets/portfolio/lifestyle-1.jpg";
-import lifestyle2 from "@/assets/portfolio/lifestyle-2.jpg";
-import lifestyle3 from "@/assets/portfolio/lifestyle-3.jpg";
+import smm1 from "@/assets/portfolio/smm-1.webp";
+import smm2 from "@/assets/portfolio/smm-2.webp";
+import smm3 from "@/assets/portfolio/smm-3.webp";
+import smm4 from "@/assets/portfolio/smm-4.webp";
+import smm5 from "@/assets/portfolio/smm-5.webp";
+import smm6 from "@/assets/portfolio/smm-6.webp";
+import smm7 from "@/assets/portfolio/smm-7.webp";
+import smm8 from "@/assets/portfolio/smm-8.webp";
+import smm9 from "@/assets/portfolio/smm-9.webp";
+import smm10 from "@/assets/portfolio/smm-10.webp";
 import creative1 from "@/assets/portfolio/creative-1.jpg";
 import creative2 from "@/assets/portfolio/creative-2.jpg";
 import creative3 from "@/assets/portfolio/creative-3.jpg";
@@ -31,7 +38,7 @@ export interface PortfolioItem {
 export const categories: { key: Category; label: string }[] = [
   { key: "all", label: "Усі" },
   { key: "ecommerce", label: "Білий фон" },
-  { key: "lifestyle", label: "Lifestyle" },
+  { key: "lifestyle", label: "Для соц. мереж" },
   { key: "creative", label: "Креативна" },
   { key: "detail", label: "Detail & Macro" },
 ];
@@ -47,13 +54,22 @@ export const portfolioItems: PortfolioItem[] = [
   { id: 19, src: whiteBg8, alt: "Білий фон — Farmasi BB Cream (бік)", category: "ecommerce", aspect: "portrait" },
   { id: 20, src: whiteBg9, alt: "Білий фон — Farmasi Body Lotion", category: "ecommerce", aspect: "portrait" },
   { id: 21, src: whiteBg10, alt: "Білий фон — Farm Cider", category: "ecommerce", aspect: "portrait" },
-  { id: 2, src: lifestyle1, alt: "Lifestyle — кава", category: "lifestyle", aspect: "portrait" },
+  { id: 2, src: smm1, alt: "SMM — Farmasi Lip Balm (фронт)", category: "lifestyle", aspect: "portrait" },
+  { id: 22, src: smm2, alt: "SMM — Farmasi Lip Balm (флетлей)", category: "lifestyle", aspect: "landscape" },
+  { id: 23, src: smm3, alt: "SMM — Farmasi BB Cream", category: "lifestyle", aspect: "portrait" },
+  { id: 24, src: smm4, alt: "SMM — Farmasi BB Cream (три)", category: "lifestyle", aspect: "landscape" },
+  { id: 25, src: smm5, alt: "SMM — Farmasi Body Lotion", category: "lifestyle", aspect: "portrait" },
+  { id: 26, src: smm6, alt: "SMM — Farm Cider (світлий)", category: "lifestyle", aspect: "portrait" },
+  { id: 27, src: smm7, alt: "SMM — Farm Cider (темний)", category: "lifestyle", aspect: "portrait" },
+  { id: 28, src: smm8, alt: "SMM — сидр наливають", category: "lifestyle", aspect: "portrait" },
+  { id: 29, src: smm9, alt: "SMM — сидр та яблуко", category: "lifestyle", aspect: "portrait" },
+  { id: 30, src: smm10, alt: "SMM — оливки Feudo Verde", category: "lifestyle", aspect: "portrait" },
   { id: 3, src: creative1, alt: "Рекламна зйомка — годинник", category: "creative", aspect: "portrait" },
   { id: 4, src: detail2, alt: "Macro — ювелірка", category: "detail", aspect: "landscape" },
-  { id: 6, src: lifestyle2, alt: "Lifestyle — косметика", category: "lifestyle", aspect: "landscape" },
+  
   { id: 7, src: creative2, alt: "Рекламна зйомка — косметика", category: "creative", aspect: "landscape" },
   { id: 8, src: detail1, alt: "Macro — шкіра", category: "detail", aspect: "portrait" },
-  { id: 10, src: lifestyle3, alt: "Lifestyle — їжа", category: "lifestyle", aspect: "portrait" },
+  
   { id: 11, src: creative3, alt: "Рекламна зйомка — електроніка", category: "creative", aspect: "portrait" },
   { id: 12, src: detail3, alt: "Macro — тканина", category: "detail", aspect: "landscape" },
 ];
