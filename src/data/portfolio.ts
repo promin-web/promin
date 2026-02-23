@@ -18,6 +18,15 @@ import smm7 from "@/assets/portfolio/smm-7.webp";
 import smm8 from "@/assets/portfolio/smm-8.webp";
 import smm9 from "@/assets/portfolio/smm-9.webp";
 import smm10 from "@/assets/portfolio/smm-10.webp";
+import smm11 from "@/assets/portfolio/smm-11.webp";
+import smm12 from "@/assets/portfolio/smm-12.webp";
+import smm13 from "@/assets/portfolio/smm-13.webp";
+import smm14 from "@/assets/portfolio/smm-14.webp";
+import smm15 from "@/assets/portfolio/smm-15.webp";
+import smm16 from "@/assets/portfolio/smm-16.webp";
+import smm17 from "@/assets/portfolio/smm-17.webp";
+import smm18 from "@/assets/portfolio/smm-18.webp";
+import smm19 from "@/assets/portfolio/smm-19.webp";
 import creative1 from "@/assets/portfolio/creative-1.jpg";
 import creative2 from "@/assets/portfolio/creative-2.jpg";
 import creative3 from "@/assets/portfolio/creative-3.jpg";
@@ -64,6 +73,15 @@ export const portfolioItems: PortfolioItem[] = [
   { id: 28, src: smm8, alt: "SMM — сидр наливають", category: "lifestyle", aspect: "portrait" },
   { id: 29, src: smm9, alt: "SMM — сидр та яблуко", category: "lifestyle", aspect: "portrait" },
   { id: 30, src: smm10, alt: "SMM — оливки Feudo Verde", category: "lifestyle", aspect: "portrait" },
+  { id: 31, src: smm11, alt: "SMM — оливки Feudo Verde (ракурс)", category: "lifestyle", aspect: "portrait" },
+  { id: 32, src: smm12, alt: "SMM — Fairy (ракурс)", category: "lifestyle", aspect: "portrait" },
+  { id: 33, src: smm13, alt: "SMM — Fairy з лимоном", category: "lifestyle", aspect: "portrait" },
+  { id: 34, src: smm14, alt: "SMM — бельгійський шоколад (флетлей)", category: "lifestyle", aspect: "portrait" },
+  { id: 35, src: smm15, alt: "SMM — бельгійський шоколад (стопка)", category: "lifestyle", aspect: "portrait" },
+  { id: 36, src: smm16, alt: "SMM — Farmasi Botanics Shower Gel", category: "lifestyle", aspect: "portrait" },
+  { id: 37, src: smm17, alt: "SMM — Nutriplus Spirulina (таблетки)", category: "lifestyle", aspect: "landscape" },
+  { id: 38, src: smm18, alt: "SMM — Nutriplus Spirulina (з коробкою)", category: "lifestyle", aspect: "landscape" },
+  { id: 39, src: smm19, alt: "SMM — Nutriplus Spirulina (святкова)", category: "lifestyle", aspect: "landscape" },
   { id: 3, src: creative1, alt: "Рекламна зйомка — годинник", category: "creative", aspect: "portrait" },
   { id: 4, src: detail2, alt: "Macro — ювелірка", category: "detail", aspect: "landscape" },
   
