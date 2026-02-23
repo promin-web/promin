@@ -3,11 +3,14 @@ import whiteBg2 from "@/assets/portfolio/whitebg-2.webp";
 import whiteBg3 from "@/assets/portfolio/whitebg-3.webp";
 import whiteBg4 from "@/assets/portfolio/whitebg-4.webp";
 import whiteBg5 from "@/assets/portfolio/whitebg-5.webp";
-import whiteBg6 from "@/assets/portfolio/whitebg-6.webp";
 import whiteBg7 from "@/assets/portfolio/whitebg-7.webp";
 import whiteBg8 from "@/assets/portfolio/whitebg-8.webp";
 import whiteBg9 from "@/assets/portfolio/whitebg-9.webp";
 import whiteBg10 from "@/assets/portfolio/whitebg-10.webp";
+import whiteBg11 from "@/assets/portfolio/whitebg-11.webp";
+import whiteBg12 from "@/assets/portfolio/whitebg-12.webp";
+import whiteBg13 from "@/assets/portfolio/whitebg-13.webp";
+import whiteBg14 from "@/assets/portfolio/whitebg-14.webp";
 import smm1 from "@/assets/portfolio/smm-1.webp";
 import smm2 from "@/assets/portfolio/smm-2.webp";
 import smm3 from "@/assets/portfolio/smm-3.webp";
@@ -27,14 +30,8 @@ import smm16 from "@/assets/portfolio/smm-16.webp";
 import smm17 from "@/assets/portfolio/smm-17.webp";
 import smm18 from "@/assets/portfolio/smm-18.webp";
 import smm19 from "@/assets/portfolio/smm-19.webp";
-import creative1 from "@/assets/portfolio/creative-1.jpg";
-import creative2 from "@/assets/portfolio/creative-2.jpg";
-import creative3 from "@/assets/portfolio/creative-3.jpg";
-import detail1 from "@/assets/portfolio/detail-1.jpg";
-import detail2 from "@/assets/portfolio/detail-2.jpg";
-import detail3 from "@/assets/portfolio/detail-3.jpg";
 
-export type Category = "all" | "ecommerce" | "lifestyle" | "creative" | "detail";
+export type Category = "all" | "ecommerce" | "lifestyle";
 
 export interface PortfolioItem {
   id: number;
@@ -48,8 +45,6 @@ export const categories: { key: Category; label: string }[] = [
   { key: "all", label: "Усі" },
   { key: "ecommerce", label: "Білий фон" },
   { key: "lifestyle", label: "Для соц. мереж" },
-  { key: "creative", label: "Креативна" },
-  { key: "detail", label: "Detail & Macro" },
 ];
 
 export const portfolioItems: PortfolioItem[] = [
@@ -58,11 +53,14 @@ export const portfolioItems: PortfolioItem[] = [
   { id: 14, src: whiteBg3, alt: "Білий фон — Nutriplus Spirulina (ракурс)", category: "ecommerce", aspect: "portrait" },
   { id: 15, src: whiteBg4, alt: "Білий фон — Farmasi Lip Balm (фронт)", category: "ecommerce", aspect: "portrait" },
   { id: 16, src: whiteBg5, alt: "Білий фон — Farmasi Lip Balm (бік)", category: "ecommerce", aspect: "portrait" },
-  { id: 17, src: whiteBg6, alt: "Білий фон — Farmasi Lip Balm (ракурс)", category: "ecommerce", aspect: "portrait" },
   { id: 18, src: whiteBg7, alt: "Білий фон — Farmasi BB Cream (фронт)", category: "ecommerce", aspect: "portrait" },
   { id: 19, src: whiteBg8, alt: "Білий фон — Farmasi BB Cream (бік)", category: "ecommerce", aspect: "portrait" },
   { id: 20, src: whiteBg9, alt: "Білий фон — Farmasi Body Lotion", category: "ecommerce", aspect: "portrait" },
   { id: 21, src: whiteBg10, alt: "Білий фон — Farm Cider", category: "ecommerce", aspect: "portrait" },
+  { id: 40, src: whiteBg11, alt: "Білий фон — Feudo Verde оливки (фронт)", category: "ecommerce", aspect: "portrait" },
+  { id: 41, src: whiteBg12, alt: "Білий фон — Feudo Verde оливки (тил)", category: "ecommerce", aspect: "portrait" },
+  { id: 42, src: whiteBg13, alt: "Білий фон — Feudo Verde оливки (бік)", category: "ecommerce", aspect: "portrait" },
+  { id: 43, src: whiteBg14, alt: "Білий фон — Fairy (фронт)", category: "ecommerce", aspect: "portrait" },
   { id: 2, src: smm1, alt: "SMM — Farmasi Lip Balm (фронт)", category: "lifestyle", aspect: "portrait" },
   { id: 22, src: smm2, alt: "SMM — Farmasi Lip Balm (флетлей)", category: "lifestyle", aspect: "landscape" },
   { id: 23, src: smm3, alt: "SMM — Farmasi BB Cream", category: "lifestyle", aspect: "portrait" },
@@ -82,12 +80,4 @@ export const portfolioItems: PortfolioItem[] = [
   { id: 37, src: smm17, alt: "SMM — Nutriplus Spirulina (таблетки)", category: "lifestyle", aspect: "landscape" },
   { id: 38, src: smm18, alt: "SMM — Nutriplus Spirulina (з коробкою)", category: "lifestyle", aspect: "landscape" },
   { id: 39, src: smm19, alt: "SMM — Nutriplus Spirulina (святкова)", category: "lifestyle", aspect: "landscape" },
-  { id: 3, src: creative1, alt: "Рекламна зйомка — годинник", category: "creative", aspect: "portrait" },
-  { id: 4, src: detail2, alt: "Macro — ювелірка", category: "detail", aspect: "landscape" },
-  
-  { id: 7, src: creative2, alt: "Рекламна зйомка — косметика", category: "creative", aspect: "landscape" },
-  { id: 8, src: detail1, alt: "Macro — шкіра", category: "detail", aspect: "portrait" },
-  
-  { id: 11, src: creative3, alt: "Рекламна зйомка — електроніка", category: "creative", aspect: "portrait" },
-  { id: 12, src: detail3, alt: "Macro — тканина", category: "detail", aspect: "landscape" },
 ];
