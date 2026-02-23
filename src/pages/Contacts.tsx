@@ -10,12 +10,21 @@ const Contacts = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  const res = await fetch("/api/send", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(form),
+  });
+  if (res.ok) {
     toast({ title: "Дякуємо!", description: "Ми зв'яжемося з вами найближчим часом." });
     setForm({ name: "", email: "", message: "" });
-  };
-
+  } else {
+    toast({ title: "Помилка", description: "Спробуйте ще раз або напишіть напряму на email." });
+  }
+};
+  
   return (
     <>
       <Header />
