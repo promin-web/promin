@@ -43,7 +43,7 @@ const PortfolioGrid = () => {
       </div>
 
       {/* Grid */}
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-5 space-y-4 md:space-y-5">
+      <div className="columns-1 landscape:columns-2 sm:columns-2 lg:columns-3 gap-4 md:gap-5 space-y-4 md:space-y-5">
         {filtered.map((item, index) => (
           <div
             key={item.id}
