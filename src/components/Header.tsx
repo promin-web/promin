@@ -24,7 +24,7 @@ const Header = () => {
               location.pathname === "/contacts" ? "text-foreground" : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            Контакти
+            Зв'язатись
           </Link>
         </nav>
       </div>
