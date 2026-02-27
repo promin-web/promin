@@ -45,7 +45,7 @@ const Contacts = () => {
 
         {/* Block 1 — Header */}
         <section className="mb-16">
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight mb-3">
+          <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
             Як ми працюємо
           </h1>
           <p className="text-sm text-muted-foreground">
@@ -99,7 +99,7 @@ const Contacts = () => {
 
         {/* Block 5 — CTA */}
         <section>
-          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-2">
             Обговорити проєкт
           </h2>
           <p className="text-sm text-muted-foreground mb-6">
