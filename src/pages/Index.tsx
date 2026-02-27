@@ -1,11 +1,12 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import PortfolioGrid from "@/components/PortfolioGrid";
 
 const Index = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="pt-24 pb-20 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto">
+      <main className="flex-1 pt-24 pb-20 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto w-full">
         <section className="mb-12 md:mb-16 max-w-md">
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
             Предметна фотографія для брендів та бізнесу
@@ -18,7 +19,8 @@ const Index = () => {
         </section>
         <PortfolioGrid />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 };
 
