@@ -1,5 +1,6 @@
 import { Instagram, Mail, Send } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const steps = [
@@ -39,9 +40,9 @@ const steps = [
 
 const Contacts = () => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="pt-24 pb-20 px-6 md:px-12 lg:px-20 max-w-[700px] mx-auto">
+      <main className="flex-1 pt-24 pb-20 px-6 md:px-12 lg:px-20 max-w-[700px] mx-auto w-full">
 
         {/* Block 1 — Header */}
         <section className="mb-16">
@@ -136,7 +137,8 @@ const Contacts = () => {
         </section>
 
       </main>
-    </>
+      <Footer />
+    </div>
   );
 };
 
